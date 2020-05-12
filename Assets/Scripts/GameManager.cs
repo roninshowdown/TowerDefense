@@ -10,7 +10,8 @@ public class GameManager : Singleton<GameManager>
 
     public TowerBtn ClickedBtn { get; set;}
     public int Currency {
-        get{ return currency;}
+        get{ return currency;
+        }
         set{
             this.currency = value;
             this.currencyText.text = value.ToString() + " <color=lime>$</color>";
@@ -19,7 +20,7 @@ public class GameManager : Singleton<GameManager>
 
     void Start()
     {
-        Currency = 10000;
+        Currency = 100;
     }
 
     // Update is called once per frame
