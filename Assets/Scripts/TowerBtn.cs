@@ -17,7 +17,8 @@ public class TowerBtn : MonoBehaviour
     [SerializeField]
     private Text priceText;
 
-    public int Price {get;}
+    public int Price {get{
+        return price;}}
 
     public GameObject TowerPrefab {
         get {
@@ -32,6 +33,6 @@ public class TowerBtn : MonoBehaviour
     }
 
     private void Start() {
-        priceText.text = price + "$";
+        priceText.text = Price + "$";
     }
 }
